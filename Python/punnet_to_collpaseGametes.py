@@ -281,7 +281,7 @@ def replace_punnet_with_collapsed_cases(punnet,map_caseX_to_punnet,caseX_collaps
 #
 # Read .csv file representing the punett
 #
-reader      = csv.reader(open("../R/punnet.csv","rb"),delimiter=",")
+reader      = csv.reader(open("../R(legacy)/legacy_2015/punnet.csv","rb"),delimiter=",")
 x           = list(reader)
 result      = np.array(x)
 result_copy = copy(result)
