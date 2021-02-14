@@ -47,7 +47,7 @@ for row in punnet:
 				f  = gf[1] # e.g. q2q3/2
 
 				# Collect the gamete (g) and its frequency (f)
-				if gamete_to_punnetFreq.has_key(g):
+				if g in gamete_to_punnetFreq:
 					gamete_to_punnetFreq[g] = gamete_to_punnetFreq[g]+" + "+f
 				else:
 					gamete_to_punnetFreq[g] = f
@@ -114,4 +114,3 @@ fo.close()
 
 
 
-# Eric's Test 
